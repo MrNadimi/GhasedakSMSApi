@@ -16,7 +16,7 @@ repositories {
 ```` 
 dependencies {
       ...
-      
+      implementation 'com.github.MrNadimi:GhasedakSMSApi:1.0.0'
 }
 ````
 
