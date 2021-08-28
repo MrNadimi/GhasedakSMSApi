@@ -43,7 +43,7 @@ compileJava {
     options.compilerArgs << "-Xlint:unchecked"
 }
 
-jar {
+/*jar {
     from {
         configurations.runtime.collect {
             it.isDirectory() ? it : zipTree(it)
@@ -63,4 +63,4 @@ task execute(type:JavaExec){
     main = "com.mrnadimi.ghasedaksmsapi.MainClass"
     classpath = sourceSets.main.runtimeClasspath
     standardInput = System.in
-}
+}*/
