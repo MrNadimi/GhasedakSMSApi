@@ -7,6 +7,7 @@ import com.mrnadimi.ghasedaksmsapi.http.OkHttpPost;
 import com.mrnadimi.ghasedaksmsapi.model.CreateGroupResult;
 import com.mrnadimi.ghasedaksmsapi.model.BaseResult;
 import com.mrnadimi.ghasedaksmsapi.model.GroupListResult;
+import com.mrnadimi.ghasedaksmsapi.model.OtpResponse;
 import com.mrnadimi.ghasedaksmsapi.model.req.*;
 import lombok.NonNull;
 
@@ -76,7 +77,7 @@ public class GhasedakSMSService {
         request.sendAsync(BaseResult.class , callback);
     }
 
-    public void sendOtp(@NonNull OtpMessage otpMessage, RestCallback<BaseResult> callback){
+    public void sendOtp(@NonNull OtpMessage otpMessage, RestCallback<OtpResponse> callback){
         HttpRestRequest request = getPOSTRequest(BASE_URL+"verification/send/simple");
         request
                 .addParam("receptor" ,  otpMessage.getReceptors())
@@ -89,7 +90,7 @@ public class GhasedakSMSService {
             request.addParam("param"+(i+1) , param);
         }
 
-        request.sendAsync(BaseResult.class , callback);
+        request.sendAsync(OtpResponse.class , callback);
     }
 
 

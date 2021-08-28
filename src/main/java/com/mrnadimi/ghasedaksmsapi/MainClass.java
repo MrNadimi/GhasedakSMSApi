@@ -5,6 +5,7 @@ import com.mrnadimi.ghasedaksmsapi.http.RestCallback;
 import com.mrnadimi.ghasedaksmsapi.model.CreateGroupResult;
 import com.mrnadimi.ghasedaksmsapi.model.BaseResult;
 import com.mrnadimi.ghasedaksmsapi.model.GroupListResult;
+import com.mrnadimi.ghasedaksmsapi.model.OtpResponse;
 import com.mrnadimi.ghasedaksmsapi.model.req.*;
 
 import java.util.ArrayList;
@@ -24,16 +25,16 @@ class MainClass {
     /*private static GhasedakSMSService ghasedakApi;
 
     public static void main(String[] args){
-        ghasedakApi = new GhasedakSMSService("3615b737916e09596d5eab5f09a278a9676eedf5f43b288c508d5adb83984c5a");
+        ghasedakApi = new GhasedakSMSService("");
         //sendSMS();
         //sendBulk();
         //sendBulkPair();
-        //sendOtp();
+        sendOtp();
         //sendTextToVoiceMessage();
         //getMessageStatus();
         //createContactGroup();
         //addContact();
-        getGroupList();
+        //getGroupList();
     }
 
 
@@ -97,11 +98,11 @@ class MainClass {
         String phone = "...";
         String param = "234561";
         OtpMessage.Type type = OtpMessage.Type.TEXT;
-        String template = "...";
+        String template = "";
         OtpMessage otpMessage = new OtpMessage(phone , param , type , template);
-        ghasedakApi.sendOtp(otpMessage, new RestCallback<BaseResult>() {
+        ghasedakApi.sendOtp(otpMessage, new RestCallback<OtpResponse>() {
             @Override
-            public void onSuccess(Call<BaseResult> response) {
+            public void onSuccess(Call<OtpResponse> response) {
                 System.out.println("StatusCode: "+response.statusCode+"    \nResponse: "+response.response);
             }
 
