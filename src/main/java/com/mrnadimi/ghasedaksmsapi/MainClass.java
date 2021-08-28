@@ -21,7 +21,7 @@ import java.util.List;
  */
 class MainClass {
 
-    private static GhasedakSMSService ghasedakApi;
+    /*private static GhasedakSMSService ghasedakApi;
 
     public static void main(String[] args){
         ghasedakApi = new GhasedakSMSService("3615b737916e09596d5eab5f09a278a9676eedf5f43b288c508d5adb83984c5a");
@@ -193,6 +193,6 @@ class MainClass {
                 ex.printStackTrace();
             }
         });
-    }
+    }*/
 
 }
