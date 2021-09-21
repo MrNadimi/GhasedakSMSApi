@@ -1,4 +1,4 @@
-package com.mrnadimi.ghasedaksmsapi.http;
+package com.mrnadimi.http;
 
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;

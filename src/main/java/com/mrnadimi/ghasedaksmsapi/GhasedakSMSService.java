@@ -1,9 +1,9 @@
 package com.mrnadimi.ghasedaksmsapi;
 
-import com.mrnadimi.ghasedaksmsapi.http.OkHttpGet;
-import com.mrnadimi.ghasedaksmsapi.http.RestCallback;
-import com.mrnadimi.ghasedaksmsapi.http.HttpRestRequest;
-import com.mrnadimi.ghasedaksmsapi.http.OkHttpPost;
+import com.mrnadimi.http.OkHttpGet;
+import com.mrnadimi.http.RestCallback;
+import com.mrnadimi.http.HttpRestRequest;
+import com.mrnadimi.http.OkHttpPost;
 import com.mrnadimi.ghasedaksmsapi.model.CreateGroupResult;
 import com.mrnadimi.ghasedaksmsapi.model.BaseResult;
 import com.mrnadimi.ghasedaksmsapi.model.GroupListResult;

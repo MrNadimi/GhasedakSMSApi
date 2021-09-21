@@ -1,16 +1,5 @@
 package com.mrnadimi.ghasedaksmsapi;
 
-import com.mrnadimi.ghasedaksmsapi.http.Call;
-import com.mrnadimi.ghasedaksmsapi.http.RestCallback;
-import com.mrnadimi.ghasedaksmsapi.model.CreateGroupResult;
-import com.mrnadimi.ghasedaksmsapi.model.BaseResult;
-import com.mrnadimi.ghasedaksmsapi.model.GroupListResult;
-import com.mrnadimi.ghasedaksmsapi.model.OtpResponse;
-import com.mrnadimi.ghasedaksmsapi.model.req.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  * Developer: Mohamad Nadimi

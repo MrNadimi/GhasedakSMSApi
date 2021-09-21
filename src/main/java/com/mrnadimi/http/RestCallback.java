@@ -1,4 +1,4 @@
-package com.mrnadimi.ghasedaksmsapi.http;
+package com.mrnadimi.http;
 
 /**
  * Developer: Mohamad Nadimi

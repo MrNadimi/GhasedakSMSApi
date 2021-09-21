@@ -1,4 +1,4 @@
-package com.mrnadimi.ghasedaksmsapi.http;
+package com.mrnadimi.http;
 
 import com.google.gson.Gson;
 import org.jetbrains.annotations.NotNull;
